@@ -14,7 +14,8 @@ Users should be able to:
 
 ### Screenshot
 
-![desktop](.\design\my-screenshot.pngt.jpg)
+![my-screenshot](https://user-images.githubusercontent.com/100880176/188287063-583b4598-6004-468a-bdce-dbcbc650c47e.png)
+
 
 ### Links
 
