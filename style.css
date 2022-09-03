@@ -1,0 +1,141 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+/*desktop size*/
+body {
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    margin: 30px auto;
+    padding: 0px 30px;
+    
+}
+
+.grid {
+    max-width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    overflow: hidden;
+}
+    
+.card_content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    
+}
+
+.img img {
+    max-width: 100%;
+    display: inherit;
+}
+h2 {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 32px;
+    line-height: 2rem;
+}
+h6, p {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+h6 {
+    letter-spacing: 3px;
+}
+.prices {
+    display:flex;
+    align-items: center;
+}
+.big_price {
+
+    font-family: 'Fraunces', serif;
+    color:hsl(158, 36%, 37%);
+    font-size: 32px;
+    margin-right: 25px;
+}
+
+.btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color:hsl(0, 0%, 100%);
+    font-size: 14px;
+    background-color: hsl(158, 36%, 37%);
+    border-style: none;
+    height: 45px;
+    width: 240px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #1a4031;
+  }
+
+.icon {
+    margin-right: 10px;
+}
+.credits {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 628px) { /*transition size*/
+   
+    .grid {        
+        grid-template-columns: 1fr;
+     }
+    .card_content {
+        display: block;
+        padding: 20px;
+    }
+    .container {
+        padding: 0px 15px;
+    }
+    .img img {
+        width: 100%;
+        max-height: 450px;
+        object-fit: cover;
+    }
+    .btn {
+        width: 100%;
+    }
+    h2, h6, p, .price {
+       padding-bottom: 23px;
+    }
+}
+
+@media screen and (max-width: 376px) { /*mobile size*/
+    .container {
+        margin: 30px auto;        
+    }
+    .img img {
+        max-height: 280px;
+    }
+    h2, h6, p, .price {
+        padding-bottom: 16px;
+     }
+}
+
